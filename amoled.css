@@ -1,0 +1,258 @@
+/*
+Amoled theme for The Lounge
+Based on the Morning and Zenburn Themes by Riku Rouvila and JP Smith respectively
+
+Installation instructions can be found here
+https://thelounge.github.io/docs/server/configuration.html#theme
+
+Author: realies
+GitHub: https://github.com/realies
+*/
+
+/*
+BACKGROUND #000
+INPUT BACKGROUND #000
+PRIMARY #dcdccc
+SECONDARY #99a2b4
+BORDERS #101010
+QUIT #bc6c4c
+*/
+
+body {
+	background: #000;
+	color: #dcdccc;
+}
+
+#main,
+#chat .sidebar,
+#windows .chan,
+#windows .window {
+	background: #000;
+}
+
+#settings,
+#sign-in,
+#connect .title {
+	color: #88b090;
+}
+
+#settings,
+#sign-in,
+#connect .opt {
+	color: #dcdccc;
+}
+
+#sidebar {
+	background: #000;
+    border-right: 1px solid #101010;
+    bottom: 45px;
+}
+
+#sidebar .chan .name::after {
+	background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+}
+
+#footer {
+	border-top: 1px solid #101010;
+}
+
+#chat .count {
+	background-color: #000;
+}
+
+#chat .search {
+	color: #88b090;
+	padding: 15px 16px;
+}
+
+/* Borders */
+#chat .from,
+#windows .header,
+#chat .user-mode::before,
+#chat .sidebar {
+	border-color: #101010;
+}
+
+/* User list */
+#chat .user-mode {
+	color: #dcdccc;
+}
+
+/* Nicknames */
+#chat .user {
+	color: #bc8cbc;
+}
+
+#chat.colored-nicks .user.color-1 { color: #f7adf7; }
+#chat.colored-nicks .user.color-2 { color: #abf99f; }
+#chat.colored-nicks .user.color-3 { color: #86efdc; }
+#chat.colored-nicks .user.color-4 { color: #b76ee5; }
+#chat.colored-nicks .user.color-5 { color: #f9a4b3; }
+#chat.colored-nicks .user.color-6 { color: #f7999a; }
+#chat.colored-nicks .user.color-7 { color: #f497b9; }
+#chat.colored-nicks .user.color-8 { color: #f9a9d7; }
+#chat.colored-nicks .user.color-9 { color: #7fa2e2; }
+#chat.colored-nicks .user.color-10 { color: #a8b8ff; }
+#chat.colored-nicks .user.color-11 { color: #ad88fc; }
+#chat.colored-nicks .user.color-12 { color: #f4aead; }
+#chat.colored-nicks .user.color-13 { color: #fc71ab; }
+#chat.colored-nicks .user.color-14 { color: #ff72e0; }
+#chat.colored-nicks .user.color-15 { color: #8cb6ea; }
+#chat.colored-nicks .user.color-16 { color: #f9857c; }
+#chat.colored-nicks .user.color-17 { color: #ed9b82; }
+#chat.colored-nicks .user.color-18 { color: #8df484; }
+#chat.colored-nicks .user.color-19 { color: #ffcce3; }
+#chat.colored-nicks .user.color-20 { color: #efcc81; }
+#chat.colored-nicks .user.color-21 { color: #90a1ed; }
+#chat.colored-nicks .user.color-22 { color: #f4d484; }
+#chat.colored-nicks .user.color-23 { color: #97ea70; }
+#chat.colored-nicks .user.color-24 { color: #fcbbba; }
+#chat.colored-nicks .user.color-25 { color: #eef975; }
+#chat.colored-nicks .user.color-26 { color: #c7ff93; }
+#chat.colored-nicks .user.color-27 { color: #ffade1; }
+#chat.colored-nicks .user.color-28 { color: #98ecf2; }
+#chat.colored-nicks .user.color-29 { color: #7187f2; }
+#chat.colored-nicks .user.color-30 { color: #9676e2; }
+#chat.colored-nicks .user.color-31 { color: #f2a4eb; }
+#chat.colored-nicks .user.color-32 { color: #85f27d; }
+
+#chat a {
+	color: #8c8cbc;
+}
+
+/* Increase contrast of some IRC colors */
+.irc-fg2 { color: #1b94ff; }
+.irc-fg5 { color: #e969a7; }
+.irc-fg12 { color: #6fb7ff; }
+
+/* Message form */
+#form {
+	background: #000;
+	border-color: #101010;
+}
+
+#windows #form .input {
+	background-color: #000;
+	border-color: #101010;
+	color: #dcdccc;
+}
+
+#form #nick {
+	background: #101010;
+	color: #dcdccc;
+}
+
+#form #submit:hover {
+	opacity: 1;
+}
+
+/* Buttons */
+#chat .show-more-button {
+	background: #000;
+	border-color: #101010;
+	color: #dcdccc;
+}
+
+#chat .show-more-button:hover {
+	color: #fff;
+}
+
+#chat .header {
+	color: #99a2b4;
+}
+
+/* Notification dot on the top right corner of the menu icon */
+#viewport .lt::after {
+	border-color: #000;
+}
+
+#chat .unread-marker-text::before {
+	background-color: #000;
+}
+
+#chat .date-marker::before {
+	border-color: #97ea70;
+}
+
+#chat .date-marker-text::before {
+	background-color: #000;
+	color: #97ea70;
+}
+
+/* Setup text colors */
+#chat .msg {
+	color: #ffcfaf;
+}
+
+#chat .message {
+	color: #dcdccc;
+}
+
+#chat .self .text {
+	color: #99a2b4;
+}
+
+#chat .error,
+#chat .error .from,
+#chat .channel .highlight,
+#chat .channel .highlight .from,
+#chat .channel .highlight .text {
+	color: #bc6c4c;
+}
+
+#chat .unhandled .from {
+	color: #aaa;
+}
+
+#chat .msg.quit .time,
+#chat .msg.quit .from button {
+	color: #bc6c9c;
+}
+
+#chat .msg.topic {
+	color: #dcdccc;
+}
+
+#chat .msg.join .time,
+#chat .msg.join .from button {
+	color: #8cd0d3;
+}
+
+#chat table.channel-list td {
+	color: #ccc;
+}
+
+/* Previews */
+
+#chat .toggle-content {
+	color: #dcdccc;
+}
+
+#chat .toggle-content .body {
+	color: #99a2b4;
+}
+
+/* Form elements */
+
+#chat-container ::-moz-placeholder {
+	color: #99a2b4;
+	opacity: 0.5;
+}
+
+#chat-container ::-webkit-input-placeholder {
+	color: #99a2b4;
+	opacity: 0.5;
+}
+
+#chat-container :-ms-input-placeholder {
+	color: #99a2b4;
+	opacity: 0.5;
+}
+
+/* End form elements */
+
+@media (min-width: 480px) {
+	#chat .from::after {
+		background: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 1) 100%);
+	}
+}
