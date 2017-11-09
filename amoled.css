@@ -39,7 +39,7 @@ body {
 #settings,
 #sign-in,
 #connect .opt {
-	color: #dcdccc;
+	color: #eee;
 }
 
 #sidebar {
@@ -75,7 +75,7 @@ body {
 
 /* User list */
 #chat .user-mode {
-	color: #dcdccc;
+	color: #eee;
 }
 
 /* Nicknames */
@@ -181,11 +181,11 @@ body {
 
 /* Setup text colors */
 #chat .msg {
-	color: #ffcfaf;
+	color: #777;
 }
 
 #chat .message {
-	color: #dcdccc;
+	color: #eee;
 }
 
 #chat .self .text {
@@ -210,7 +210,7 @@ body {
 }
 
 #chat .msg.topic {
-	color: #dcdccc;
+	color: #eee;
 }
 
 #chat .msg.join .time,
@@ -225,7 +225,7 @@ body {
 /* Previews */
 
 #chat .toggle-content {
-	color: #dcdccc;
+	color: #eee;
 }
 
 #chat .toggle-content .body {
