@@ -225,6 +225,7 @@ body {
 /* Previews */
 
 #chat .toggle-content {
+	background: #111;
 	color: #eee;
 }
 
