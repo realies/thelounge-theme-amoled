@@ -1,6 +1,6 @@
 {
   "name": "lounge-theme-amoled",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "A predominantly black theme purposed for AMOLED displays",
   "main": "package.json",
   "thelounge": {
@@ -16,6 +16,9 @@
   },
   "keywords": [
     "amoled",
+    "black",
+    "dark",
+    "lounge",
     "thelounge",
     "thelounge-theme"
   ],

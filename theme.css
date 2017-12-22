@@ -44,8 +44,8 @@ body {
 
 #sidebar {
 	background: #000;
-    border-right: 1px solid #101010;
-    bottom: 45px;
+	border-right: 1px solid #101010;
+	bottom: 45px;
 }
 
 #sidebar .chan .name::after {
@@ -88,7 +88,7 @@ body {
 #chat.colored-nicks .user.color-3 { color: #86efdc; }
 #chat.colored-nicks .user.color-4 { color: #b76ee5; }
 #chat.colored-nicks .user.color-5 { color: #f9a4b3; }
-#chat.colored-nicks .user.color-6 { color: #f7999a; }
+#chat.colored-nicks .user.color-6 { color: #9676e2; }
 #chat.colored-nicks .user.color-7 { color: #f497b9; }
 #chat.colored-nicks .user.color-8 { color: #f9a9d7; }
 #chat.colored-nicks .user.color-9 { color: #7fa2e2; }
@@ -112,7 +112,7 @@ body {
 #chat.colored-nicks .user.color-27 { color: #ffade1; }
 #chat.colored-nicks .user.color-28 { color: #98ecf2; }
 #chat.colored-nicks .user.color-29 { color: #7187f2; }
-#chat.colored-nicks .user.color-30 { color: #9676e2; }
+#chat.colored-nicks .user.color-30 { color: #f7999a; }
 #chat.colored-nicks .user.color-31 { color: #f2a4eb; }
 #chat.colored-nicks .user.color-32 { color: #85f27d; }
 
@@ -206,7 +206,7 @@ body {
 
 #chat .msg.quit .time,
 #chat .msg.quit .from button {
-	color: #bc6c9c;
+	color: #bc6c4c;
 }
 
 #chat .msg.topic {
