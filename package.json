@@ -1,6 +1,6 @@
 {
-  "name": "lounge-theme-amoled",
-  "version": "1.0.4",
+  "name": "thelounge-theme-amoled",
+  "version": "1.0.5",
   "description": "A predominantly black theme purposed for AMOLED displays",
   "main": "package.json",
   "thelounge": {
@@ -9,10 +9,10 @@
     "css": "theme.css"
   },
   "license": "MIT",
-  "homepage": "https://github.com/realies/lounge-theme-amoled",
+  "homepage": "https://github.com/realies/thelounge-theme-amoled",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/realies/lounge-theme-amoled.git"
+    "url": "git+https://github.com/realies/thelounge-theme-amoled.git"
   },
   "keywords": [
     "amoled",
@@ -22,6 +22,6 @@
     "thelounge-theme"
   ],
   "bugs": {
-    "url": "https://github.com/realies/lounge-theme-amoled/issues"
+    "url": "https://github.com/realies/thelounge-theme-amoled/issues"
   }
 }
