@@ -33,7 +33,7 @@ body {
 #settings,
 #sign-in,
 #connect .title {
-	color: #88b090;
+	color: #eee;
 }
 
 #settings,
@@ -61,7 +61,7 @@ body {
 }
 
 #chat .search {
-	color: #88b090;
+	color: #eee;
 	padding: 15px 16px;
 }
 
