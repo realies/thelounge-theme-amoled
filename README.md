@@ -1,4 +1,4 @@
-# thelounge-theme-amoled
+## thelounge-theme-amoled
 🎨 A predominantly black theme purposed for AMOLED displays
 
 ```
