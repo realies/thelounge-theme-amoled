@@ -1,9 +1,9 @@
 /*
 Amoled theme for The Lounge
-Based on the Morning and Zenburn Themes by Riku Rouvila and JP Smith respectively
+Based on the Morning theme by Riku Rouvila
 
 Installation instructions can be found here
-https://thelounge.github.io/docs/server/configuration.html#theme
+https://thelounge.chat/docs/server/configuration.html#theme
 
 Author: realies
 GitHub: https://github.com/realies
@@ -15,61 +15,47 @@ INPUT BACKGROUND #000
 PRIMARY #eee
 SECONDARY #99a2b4
 BORDERS #101010
-QUIT #bc6c4c
+QUIT #d0907d
 */
 
 body {
-	background: #000;
 	color: #eee;
 }
 
+.logo {
+	display: none;
+}
+
+.logo-inverted {
+	display: inline-block;
+}
+
 #main,
-#chat .sidebar,
+#chat .userlist,
 #windows .chan,
 #windows .window {
 	background: #000;
 }
 
-#settings,
-#sign-in,
-#connect .title {
-	color: #eee;
+#chat .userlist .count {
+	background-color: #000;
 }
 
-#settings,
-#sign-in,
-#connect .opt {
+#chat .userlist .search {
 	color: #eee;
+	padding: 15px 16px;
 }
 
 #sidebar {
 	background: #000;
 	border-right: 1px solid #101010;
-	bottom: 45px;
-}
-
-#sidebar .chan .name::after {
-	background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
-}
-
-#footer {
-	border-top: 1px solid #101010;
-}
-
-#chat .count {
-	background-color: #000;
-}
-
-#chat .search {
-	color: #eee;
-	padding: 15px 16px;
 }
 
 /* Borders */
 #chat .content,
 #windows .header,
 #chat .user-mode::before,
-#chat .sidebar {
+#chat .userlist {
 	border-color: #101010;
 }
 
@@ -78,9 +64,13 @@ body {
 	color: #eee;
 }
 
+#chat .userlist .user.active {
+	background: #000;
+}
+
 /* Nicknames */
 #chat .user {
-	color: #bc8cbc;
+	color: #b0bacf;
 }
 
 #chat.colored-nicks .user.color-1 { color: #f7adf7; }
@@ -88,7 +78,7 @@ body {
 #chat.colored-nicks .user.color-3 { color: #86efdc; }
 #chat.colored-nicks .user.color-4 { color: #b76ee5; }
 #chat.colored-nicks .user.color-5 { color: #f9a4b3; }
-#chat.colored-nicks .user.color-6 { color: #9676e2; }
+#chat.colored-nicks .user.color-6 { color: #f7999a; }
 #chat.colored-nicks .user.color-7 { color: #f497b9; }
 #chat.colored-nicks .user.color-8 { color: #f9a9d7; }
 #chat.colored-nicks .user.color-9 { color: #7fa2e2; }
@@ -112,7 +102,7 @@ body {
 #chat.colored-nicks .user.color-27 { color: #ffade1; }
 #chat.colored-nicks .user.color-28 { color: #98ecf2; }
 #chat.colored-nicks .user.color-29 { color: #7187f2; }
-#chat.colored-nicks .user.color-30 { color: #f7999a; }
+#chat.colored-nicks .user.color-30 { color: #9676e2; }
 #chat.colored-nicks .user.color-31 { color: #f2a4eb; }
 #chat.colored-nicks .user.color-32 { color: #85f27d; }
 
@@ -121,9 +111,9 @@ body {
 }
 
 /* Increase contrast of some IRC colors */
-.irc-fg2 { color: #1b94ff; }
+.irc-fg2 { color: #0074d9; }
 .irc-fg5 { color: #e969a7; }
-.irc-fg12 { color: #6fb7ff; }
+.irc-fg12 { color: #50a8ff; }
 
 /* Message form */
 #form {
@@ -132,8 +122,8 @@ body {
 }
 
 #windows #form .input {
-	background-color: #000;
-	border-color: #101010;
+	background-color: #000 !important;
+	border-color: #101010 !important;
 	color: #eee;
 }
 
@@ -150,7 +140,7 @@ body {
 #chat .show-more-button {
 	background: #000;
 	border-color: #101010;
-	color: #dcdccc;
+	color: #eee;
 }
 
 #chat .show-more-button:hover {
@@ -181,7 +171,7 @@ body {
 
 /* Setup text colors */
 #chat .msg {
-	color: #777;
+	color: #f3f3f3;
 }
 
 #chat .message {
@@ -197,16 +187,16 @@ body {
 #chat .channel .highlight,
 #chat .channel .highlight .from,
 #chat .channel .highlight .text {
-	color: #bc6c4c;
+	color: #f92772;
 }
 
 #chat .unhandled .from {
-	color: #aaa;
+	color: #99a2b4;
 }
 
 #chat .msg.quit .time,
 #chat .msg.quit .from button {
-	color: #bc6c4c;
+	color: #d0907d !important;
 }
 
 #chat .msg.topic {
@@ -215,18 +205,32 @@ body {
 
 #chat .msg.join .time,
 #chat .msg.join .from button {
-	color: #8cd0d3;
+	color: #84ce88 !important;
 }
 
 #chat table.channel-list td {
-	color: #ccc;
+	color: #eee;
 }
 
-/* Previews */
+code,
+.irc-monospace {
+	background: #000;
+	color: #f3f3f3;
+}
 
-#chat .toggle-content {
-	background: #111;
+kbd {
 	color: #eee;
+	text-shadow: 0 -1px 0 #000;
+	border-color: #000;
+	background-color: #333;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.25), transparent);
+	box-shadow: 0 2px 0 #000, inset 0 1px 1px #777, inset 0 -1px 3px #222;
+}
+
+/* Embeds */
+#chat .toggle-content {
+	background: #101010;
+	color: #f3f3f3;
 }
 
 #chat .toggle-content .body {
@@ -251,9 +255,3 @@ body {
 }
 
 /* End form elements */
-
-@media (min-width: 480px) {
-	#chat .from::after {
-		background: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 1) 100%);
-	}
-}
