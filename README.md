@@ -1,5 +1,5 @@
 ## thelounge-theme-amoled
-🎨 A predominantly black theme purposed for AMOLED displays
+🎨 Black theme suitable for AMOLED displays
 
 ```
 thelounge install thelounge-theme-amoled
