@@ -256,3 +256,33 @@ kbd {
 }
 
 /* End form elements */
+
+
+/* remove channel padding */
+.channel-list-item {
+  padding: 0px 0px 0px 25px;
+}
+
+/* AMOLED black */
+:root {
+  --highlight-bg-color: #000000;
+  --window-bg-color: #000000;
+}
+#chat .userlist .search {
+  background-color: #000000;
+}
+
+/* hide thelounge logo */
+#sidebar > div > div.logo-container > img.logo-inverted {
+  display: none;
+}
+
+/* remove padding for channel switcher */
+#jump-to-container .channel-list-item[data-type=lobby] {
+  padding: 0px;
+}
+
+/* for mobile */
+#chat .msg {
+  font-size: 13px;
+}
