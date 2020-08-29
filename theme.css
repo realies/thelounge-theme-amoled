@@ -11,11 +11,23 @@
 	--link-color: #3498db;
 	--window-bg-color: #000;
 	--window-heading-color: #6c797a;
-	--date-marker-color: rgba(41, 128, 185, .5);
-	--unread-marker-color: rgba(231, 76, 60, 0.5);
+	--date-marker-color: var(--button-color);
+	--unread-marker-color: var(--button-color);
 	--highlight-bg-color: var(--border-color);
 	--highlight-border-color: var(--button-color);
 	--upload-progressbar-color: var(--button-color);
+}
+
+::-webkit-scrollbar:hover {
+	background-color: var(--body-bg-color-light);
+}
+
+::-webkit-scrollbar-thumb:vertical {
+	background-color: var(--border-color);
+}
+
+::-webkit-scrollbar-thumb:vertical:active {
+	background-color: #444;
 }
 
 body,
@@ -30,6 +42,10 @@ body,
 
 a:visited {
 	color: #9b59b6;
+}
+
+.logo-container {
+	display: none;
 }
 
 .channel-list-item[data-type=lobby] {
@@ -129,9 +145,14 @@ a:visited {
 	color: var(--border-color);
 }
 
+#chat .msg[data-type=invite] .from:before,
 #chat .msg[data-type="topic"] .from::before,
+#chat .msg[data-type="mode"] .from::before,
 #chat .msg[data-type="mode_channel"] .from::before,
-#chat .msg[data-type="mode"] .from::before {
+#chat .msg[data-type=whois] .from:before,
+#chat .msg[data-type=nick] .from:before,
+#chat .msg[data-type=join] .from:before,
+#chat .msg.self[data-type=raw] .from:before {
 	color: var(--button-color);
 }
 
