@@ -1,18 +1,9 @@
-/*
-Amoled theme for The Lounge
-
-Installation instructions can be found here
-https://thelounge.chat/docs/configuration#theme
-
-Author: realies
-GitHub: https://github.com/realies
-*/
-
 :root {
 	--body-color: #eee;
-	--body-color-muted: #757575;
-	--border-color: #111;
+	--body-color-muted: #9b9b9b;
+	--border-color: #222;
 	--body-bg-color: #000 !important;
+	--body-bg-color-light: #111;
 	--button-color: #2980b9;
 	--button-color-muted: #3498db;
 	--button-text-color-hover: #fff;
@@ -22,8 +13,8 @@ GitHub: https://github.com/realies
 	--window-heading-color: #6c797a;
 	--date-marker-color: rgba(41, 128, 185, .5);
 	--unread-marker-color: rgba(231, 76, 60, 0.5);
-	--highlight-bg-color: #efe8dc;
-	--highlight-border-color: #b08c4f;
+	--highlight-bg-color: var(--border-color);
+	--highlight-border-color: var(--button-color);
 	--upload-progressbar-color: var(--button-color);
 }
 
@@ -80,11 +71,11 @@ a:visited {
 }
 
 .jump-to-input .input {
-	color: var(--body-color-muted);
+	color: var(--body-color);
 }
 
 ::placeholder {
-	color: #333;
+	color: var(--body-color-muted);
 }
 
 #chat .header {
@@ -103,15 +94,15 @@ a:visited {
 #chat .msg[data-type=monospace_block] .text,
 #chat .toggle-content,
 #form #nick {
-	background: #111;
+	background: var(--body-bg-color-light);
 	color: var(--body-color);
 }
 
 #footer button:hover,
 #footer button.active,
 .channel-list-item:hover {
-	background-color: #111;
-	color: #999;
+	background-color: var(--body-bg-color-light);
+	color: var(--body-color);
 }
 
 #footer button {
@@ -120,21 +111,22 @@ a:visited {
 
 #footer button.active,
 .channel-list-item.active {
-	background-color: #111;
-	color: #999;
+	background-color: var(--body-bg-color-light);
+	color: var(--body-color);
 }
 
 #sidebar {
-	color: #666;
+	color: var(--body-color-muted);
 }
 
 .channel-list-item .badge {
-	background: hsla(0, 0%, 100%, .1);
-	color: #666;
+	background: var(--border-color);
+	color: var(--body-color);
 }
 
 .channel-list-item .badge.highlight {
-	background: #999;
+	background: var(--body-color);
+	color: var(--border-color);
 }
 
 #chat .msg[data-type="topic"] .from::before,
@@ -145,21 +137,25 @@ a:visited {
 
 code,
 .irc-monospace {
-	background-color: #222;
+	background-color: var(--border-color);
 }
 
 pre {
 	background-color: #f5f5f5;
 }
 
-kbd {
-	text-align: center;
-	text-shadow: 0 1px 0 #fff;
-	background-color: white;
-	background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.05), transparent);
-	border: 1px solid #bbb;
-	border-radius: 4px;
-	box-shadow: 0 2px 0 #bbb, inset 0 1px 1px #fff, inset 0 -1px 3px #ccc;
+#context-menu {
+	background: var(--body-bg-color);
+	border: 1px solid var(--border-color);
+}
+
+.context-menu-item {
+	color: var(--body-color-muted);
+}
+
+.context-menu-item:hover {
+	background: var(--body-bg-color-light);
+	color: var(--body-color);
 }
 
 #chat.colored-nicks .user.color-1 {
@@ -288,4 +284,17 @@ kbd {
 
 #chat.colored-nicks .user.color-32 {
 	color: #85f27d;
+}
+
+/* Increase contrast of some IRC colors */
+.irc-fg2 {
+	color: #0074d9;
+}
+
+.irc-fg5 {
+	color: #e969a7;
+}
+
+.irc-fg12 {
+	color: #50a8ff;
 }
