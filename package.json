@@ -1,6 +1,6 @@
 {
   "name": "thelounge-theme-amoled",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "description": "Black theme suitable for AMOLED displays",
   "main": "package.json",
   "thelounge": {
