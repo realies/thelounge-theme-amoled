@@ -320,3 +320,24 @@ pre {
 .irc-fg12 {
   color: #50a8ff;
 }
+
+/* Darken mentions menu and active element hover */
+.mentions-popup,
+#context-menu,
+.textcomplete-menu {
+  background-color: rgba(0, 0, 0, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.context-menu-item,
+.textcomplete-item a {
+  color: var(--body-color);
+}
+
+.context-menu-item.active,
+.textcomplete-item:focus,
+.textcomplete-item:hover,
+.textcomplete-menu .active,
+#chat .userlist .user.active {
+  background-color: rgba(255, 255, 255, 0.1);
+}
