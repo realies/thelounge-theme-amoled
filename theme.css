@@ -81,6 +81,15 @@ a:visited {
   color: var(--body-color-muted);
 }
 
+form.message-search input {
+  background: inherit;
+  color: inherit;
+}
+
+form.message-search input::placeholder {
+  color: var(--body-color-muted);
+}
+
 #form {
   background: inherit;
   color: var(--body-color);
